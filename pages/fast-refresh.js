@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
 export default function TestImage({data}) {
@@ -16,7 +15,7 @@ export default function TestImage({data}) {
           Hey There! <code className={styles.codelarge}>I'm {data.name}</code>
         </h1>
         <h1 className={styles.title}>
-          I'm a <code className={styles.codelarge}>{data.age}</code> years old {data.job}.
+          I'm a <code className={styles.codelarge}>{data.age}</code> year old {data.job}.
         </h1>
       </main>
 
@@ -39,7 +38,7 @@ export async function getStaticProps() {
   const data = {
     name: 'John',
     age: 28,
-    job: 'singer'
+    job: 'actor'
   }
 
   // The value of the `props` key will be
